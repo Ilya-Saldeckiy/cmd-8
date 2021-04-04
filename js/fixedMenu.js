@@ -22,10 +22,10 @@ if( $(window).width() > 2840){
         if(700 > scrolled){
             $(".header-section-fixed").removeClass("fixed-active")
         }
-        if(scrolled > 9500){
+        if(scrolled > 3750){
             $(".header-section-fixed").addClass("fixed-close")
         }
-        if(scrolled < 9500){
+        if(scrolled < 3750){
             $(".header-section-fixed").removeClass("fixed-close")
         }
     }
@@ -40,10 +40,10 @@ if($(window).width()> 1900){
 		if(700 > scrolled){
 			$(".header-section-fixed").removeClass("fixed-active")
 		}
-		if(scrolled > 9200){
+		if(scrolled > 3750){
 			$(".header-section-fixed").addClass("fixed-close")
 		}
-		if(scrolled < 9200){
+		if(scrolled < 3750){
 			$(".header-section-fixed").removeClass("fixed-close")
 		}
 	}
@@ -58,10 +58,10 @@ if( $(window).width() > 1600){
         if(70 > scrolled){
             $(".header-section-fixed").removeClass("fixed-active")
         }
-        if(scrolled > 9550){
+        if(scrolled > 3750){
             $(".header-section-fixed").addClass("fixed-close")
         }
-        if(scrolled < 9550){
+        if(scrolled < 3750){
             $(".header-section-fixed").removeClass("fixed-close")
         }
     }
@@ -76,10 +76,10 @@ if($(window).width()> 1400){
 		if(700 > scrolled){
 			$(".header-section-fixed").removeClass("fixed-active")
 		}
-		if(scrolled > 9550){
+		if(scrolled > 3750){
 			$(".header-section-fixed").addClass("fixed-close")
 		}
-		if(scrolled < 9550){
+		if(scrolled < 3750){
 			$(".header-section-fixed").removeClass("fixed-close")
 		}
 	}
@@ -94,10 +94,10 @@ if($(window).width()> 767){
 		if(600 > scrolled){
 			$(".header-section-fixed").removeClass("fixed-active")
 		}
-		if(scrolled >12800){
+		if(scrolled >5700){
 			$(".header-section-fixed").addClass("fixed-close")
 		}
-		if(scrolled < 12800){
+		if(scrolled < 5700){
 			$(".header-section-fixed").removeClass("fixed-close")
 		}
 	}
@@ -112,10 +112,10 @@ if($(window).width()> 400){
 		if(600 > scrolled){
 			$(".header-section-fixed").removeClass("fixed-active")
 		}
-		if(scrolled > 9500){
+		if(scrolled > 6100){
 			$(".header-section-fixed").addClass("fixed-close")
 		}
-		if(scrolled < 9500){
+		if(scrolled < 6100){
 			$(".header-section-fixed").removeClass("fixed-close")
 		}
 	}

@@ -680,7 +680,8 @@ table {
     }
 
     .popup-close{
-        top: -4px;
+        top: -8px;
+        right: -8px;
     }
 
     .city-picker__item {
@@ -696,7 +697,107 @@ table {
     .input-btn{
         right: 16px;
     }
+
+    .modal__list-analiz-caption{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .modal__list-analiz-caption{
+        padding-right: 30px;
+        padding-bottom: 17px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 43px;
+    }
+
+    .modal-model .modal__list-text{
+        font-size: 14px;
+        font-weight: 400;
+        color: #777777;
+    }
+
+    .second-modal{
+        max-height: 100%;
+    }
+
+    .horizontal-scroll-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .btn__second-modal-position{
+        width: 100%;
+    }
+
+    .btn__second-modal{
+       padding-left: 16px;
+       padding-right: 16px;
+    }
+
+    .popup {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+        padding-bottom: 20px;
+    }
+
+    .modal__caption{
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 43px;
+    }
+
+    .modal__description-position{
+        flex-direction: column-reverse;
+    }
     
+    .total__position {
+        position: relative;
+        right: -16px;
+    }
+
+    .total__position:last-child{
+        margin-bottom: 51px;
+    }
+    
+    .forms-modal{
+        padding-top: 51px;
+        display: block;
+    }
+
+    .modal-form__input{
+        width: 100%;
+        margin-bottom: 32px;
+        margin-right: 0;
+    }
+
+    .form-position{
+        margin-bottom: 0;
+    }
+
+    .form-btn__modal{
+        position: relative;
+        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 32px;
+    }
+
+    .download-btn{
+        position: relative;
+        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .popup .modal-researches__btn {
+        position: absolute;
+        right: 5px;
+        top: 71%;
+    }
 }
 
 

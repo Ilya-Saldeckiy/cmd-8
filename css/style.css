@@ -109,6 +109,10 @@ li{
     margin-bottom: 48px;
 }
 
+.mobile{
+    display: none !important;
+}
+
 
 
 
@@ -1615,6 +1619,11 @@ li{
     opacity: 0.7;
 }
 
+.researches-table__link:hover{
+    text-decoration: underline;
+    color: #00a9e0;
+}
+
 
 
 
@@ -2203,6 +2212,10 @@ li{
         padding-left: 16px;
         padding-right: 16px;
         width: 100%;
+    }
+
+    .choices__list--dropdown{
+        width: 368px;
     }
 
 }
@@ -3127,7 +3140,17 @@ li{
         padding-bottom: 100%;
     }
 
+    .choices__list--dropdown{
+        width: 100%;
+    }
 
+    .choices{
+        font-size: 14px;
+    }
+
+    .choices__list--dropdown .choices__item{
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 350px){
