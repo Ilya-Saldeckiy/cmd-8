@@ -255,6 +255,13 @@ li{
     font-weight: 400;
     color: #ffffff;
     margin-bottom: 51px;
+    text-align: center;
+}
+
+.header__btn span{
+    position: relative;
+    top: 10px;
+    vertical-align: -webkit-baseline-middle;
 }
 
 .header__text{
@@ -801,7 +808,6 @@ li{
 
 
 
-
 .important-position{
     border: 1px solid #f8485e;
     padding-top: 45px;
@@ -1122,7 +1128,6 @@ li{
 }
 
 .advantages-card__img{
-    width: 69px;
     margin-bottom: 28px;
 }
 
@@ -1151,6 +1156,11 @@ li{
     font-weight: 400;
     color: #000000;
     margin-bottom: 59px;
+    text-align: center;
+}
+
+.analyzes-text__link{
+    color: #22b4e4;
 }
 
 .adress-text__link{
@@ -1177,11 +1187,37 @@ li{
     padding-left: 16px;
 }
 
+.form__input:focus{
+    outline: none;
+}
+
 .form__input:placeholder{
     font-size: 16px;
     line-height: 1.2;
     font-weight: 400;
     color: #999999;
+}
+
+.clean-input{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 48px;
+    margin: auto;
+    width: 16px;
+    padding: 2px;
+    height: 16px;
+    border-radius: 100%;
+    background: url('../img/ico_x\ _white.svg') no-repeat;
+    background-position: 50% 65%;
+    background-size: 12px;
+    background-color: #cbc9c6;
+    color: #fff;
+    display: none;
+}
+
+.input-active{
+    display: block;
 }
 
 .input-btn{
@@ -1221,6 +1257,13 @@ li{
     opacity: 1;
 }
 
+.choices__list--dropdown{
+    border: 1px solid #c4c4c4;
+    -webkit-box-shadow: 0 0 10px -6px;
+    box-shadow: 0 0 10px -6px;
+    border-top: none !important;
+}
+
 .choices__list--dropdown .choices__item--selectable:after{
     content: none;
 }
@@ -1245,6 +1288,13 @@ li{
     margin-top: -8px !important;
 }
 
+.choices.is-focused.is-open{
+    position: relative;
+    outline: 0;
+    border-color: #00a9e0;
+    z-index: 9;
+}
+
 .choices.is-focused.is-open:after{
    transform: rotate(180deg);
 }
@@ -1267,7 +1317,7 @@ li{
     width: 508px;
     border: 1px solid #bbbbbb;
     left: -1px;
-    margin-top: 0;
+    margin-top: 1px;
     padding-top: 28px;
     padding-left: 24px;
     padding-bottom: 19px;
@@ -1314,12 +1364,13 @@ li{
     font-weight: 700;
     color: #000000;
     margin-right: auto;
+    cursor: pointer;
 }
 
 .researches__upper-line{
     display: flex;
     align-items: flex-end;
-    margin-right: auto;
+    margin-right: 85px;
     position: relative;
     top: -24px;
 }
@@ -1371,6 +1422,8 @@ li{
     border-radius: 100%;   
     background: url('../img/ico_list_plus.svg') no-repeat;
     background-position: center;
+    position: relative;
+    top: -8px;
 }
 
 .last-item{
@@ -1400,6 +1453,7 @@ li{
     font-weight: 400;
     color: #777777;
     padding-left: 16px;
+    margin-top: 0;
 }
 
 .sale__step-position{
@@ -1467,6 +1521,7 @@ li{
     list-style-type: disc;
     padding-left: 0px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .conditions__text{
@@ -1478,6 +1533,10 @@ li{
 
 .conditions__text:not(:last-child){
     margin-bottom: 20px;
+}
+
+ul .conditions__text{
+    margin-bottom: 20px !important;
 }
 
 .ol-list{
@@ -1888,6 +1947,22 @@ li{
     .footer{
         margin-top: 90px;
     }
+
+    .researches__upper-line{
+        margin-right: 50px;
+    }
+
+    .researches__upper-code{
+        margin-right: 50px;
+    }
+
+    .researches__upper-deadline{
+        margin-right: 50px;
+    }
+
+    .researches__upper-sale{
+        margin-right: 50px;
+    }
 }
 
 @media (max-width: 1023px){
@@ -2216,6 +2291,22 @@ li{
 
     .choices__list--dropdown{
         width: 368px;
+    }
+
+    .researches__upper-code,.researches__upper-sale{
+        margin-right: 60px;
+    }
+
+    .researches__upper-deadline{
+        margin-right: auto;
+    }
+
+    .researches__upper-price{
+        margin-right: 45px;
+    }
+
+    .researches__btn{
+        top: 57%;
     }
 
 }
@@ -2923,7 +3014,6 @@ li{
         left: 50%;
         top: -54px;
         width: 264px;
-        margin: 0 auto;
         transform: translateX(-50%);
     }
 
@@ -2952,10 +3042,6 @@ li{
 
     .header-caption{
         padding-top: 36px;
-    }
-
-    .map{
-        height: 544px;
     }
 
     .footer{
@@ -3150,6 +3236,38 @@ li{
 
     .choices__list--dropdown .choices__item{
         font-size: 14px;
+    }
+
+    .researches__btn {
+        top: 60%;
+    }
+    
+    .analyzes__text{
+        font-size: 16px;
+    }
+
+    .popup-close {
+        top: -5px !important;
+        right: 0px !important;
+    }
+
+    .header__btn span{
+        top: 1px;
+    }
+
+    .choices__inner{
+        font-size: 14px;
+    }
+
+    .map{
+        height: 400px !important;
+    }
+
+    .footer-social-list {
+        left: 50%;
+        top: -54px;
+        width: 264px;
+        transform: translateX(-50%);
     }
 }
 

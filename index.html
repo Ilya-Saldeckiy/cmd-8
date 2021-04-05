@@ -48,7 +48,7 @@
             <div class="header-caption-position">
                 <h2 class="header-caption">Скидки до&nbsp;50%</h2>
                 <h4 class="header-subtitle">на&nbsp;медицинские анализы</h4>
-                <button class="btn header__btn popup-open">Выбрать анализы</button>
+                <a href="#analiz" class="btn header__btn" type="button"><span>Выбрать анализы<span></a>
                 <p class="header__text">
                     <span class="header-text__decoration">Акция действует в&nbsp;офисе&nbsp;CMD:</span> д.&nbsp;Мисайлово,&nbsp;ЖК «Пригород Лесное», Литературный бульвар, д.&nbsp;2
                 </p>
@@ -114,7 +114,7 @@
                         <div class="forms-modal">
                             <div class="form-position">
                                 <h4 class="modal__caption-form">Отправить список на&nbsp;email</h4>
-                                <input class="modal-form__input" placeholder="Ваш email" type="email">
+                                <input class="modal-form__input" id="input-2" placeholder="Ваш email" type="email">
                                 <button class="btn form-btn__modal" type="submit">Отправить</button>
                             </div>
                             <div>
@@ -175,7 +175,7 @@
                     <p class="analyzes__text">С&nbsp;1&nbsp;по&nbsp;30&nbsp;апреля 2021&nbsp;г. в&nbsp;офисе&nbsp;CMD Мисайлово действует скидка до&nbsp;50% на&nbsp;медицинские анализы. <a class="analyzes-text__link" target="_blank" href="#">Полные условия акции</a></p>
                     <div class="analyzes__search-block">
                         <div class="select__posotion">
-                            <select name="select" id="selectCustom" data-simplebar>
+                            <select name="select" data-simplebar id="selectCustom">
                                 <option value="">Общеклинические исследования</option>
                                 <option value="">Биохимические исследования крови</option>
                                 <option value="">Биохимические исследования мочи</option>
@@ -198,7 +198,8 @@
                         </div>
                         <div class="form__position">
                             <form class="form">
-                                <input placeholder="Поиск анализа" class="form__input" type="text">
+                                <input placeholder="Поиск анализа" class="form__input" id="input" type="text">
+                                <button class="btn clean-input" type="reset"></button>
                                 <button class="btn input-btn" type="submit"></button>
                             </form>
                         </div>
@@ -561,7 +562,7 @@
                             <div class="popup second-modal popup-4">
                                 <button class="btn popup-close"></button>
                                 <div class="modal__caption-position">
-                                    <h4 class="modal__list-analiz-caption">Общий анализ крови + СОЭ (без лейкоцитарной формулы)</h4>
+                                    <h4 class="modal__list-analiz-caption">Общий анализ крови + СОЭ (без лейкоцитарной формулы)</h4>
                                     <div class="btn__second-modal-position horizontal-scroll-wrapper horizontal-scroll-wrapper">
                                         <button class="btn btn__second-modal btn__is-active" data-path="preparation-2">Подготовка</button>
                                         <button class="btn btn__second-modal" data-path="deckription-2">Описание</button>
@@ -1589,6 +1590,9 @@
 
                         <li class="conditions__text">
                             Услуги по&nbsp;взятию биоматериала оплачиваются отдельно;
+                        </li>
+                        <li class="conditions__text">
+                            Скидка по&nbsp;акции не&nbsp;суммируется со&nbsp;скидками по&nbsp;дисконтной программе, по&nbsp;Карте клиента, а&nbsp;также другими скидками, акциями и&nbsp;предложениями
                         </li>
                         <li class="conditions__text">
                             Для получения скидки нужно:
