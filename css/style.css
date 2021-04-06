@@ -1683,6 +1683,29 @@ ul .conditions__text{
     color: #00a9e0;
 }
 
+.choices__list::-webkit-scrollbar {
+    width: 3px;
+}
+
+.choices__list::-webkit-scrollbar-track {
+    border-radius: 100%;
+    width: 1px;
+    background-color: #ddd;
+}
+
+.choices__list::-webkit-scrollbar-thumb{
+    background: #999;
+    width: 3px;
+    position: absolute;
+}
+
+.choices__item:hover {
+    color: #00a9e0;
+}
+
+.choices__list--dropdown .choices__item--selectable{
+    padding-right: 60px;
+}
 
 
 
