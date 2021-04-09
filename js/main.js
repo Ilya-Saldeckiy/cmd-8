@@ -7,7 +7,7 @@ $(document).ready(function($) {
 	
 	$('.popup-close').click(function() {
         $("body").removeClass("hidden");
-		$(this).parents('.popup-fade-1').fadeOut();
+		$(this).parents('.popup-fade-1').fadeOut(0);
 		return false;
 	});		
  
@@ -253,3 +253,12 @@ input.on('input', function() {
 			$('.clean-input').removeClass('input-active');
 		}
 	});
+
+
+$(".header__btn").on("click", function(e){
+    e.preventDefault();
+    var anchor = $(this).attr('href');
+    $('html, body').stop().animate({
+        scrollTop: $(anchor).offset().top - 50
+    }, 800);
+});

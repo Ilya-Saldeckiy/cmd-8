@@ -1394,7 +1394,7 @@ li{
     display: block;
     font-size: 14px;
     color: #000000;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .researches__upper-sale{
@@ -3204,7 +3204,7 @@ ul .conditions__text{
     }
 
     .mobile{
-        display: block;
+        display: block !important;
     }
     .text-first-block{
         font-size: 14px;
@@ -3291,6 +3291,10 @@ ul .conditions__text{
         top: -54px;
         width: 264px;
         transform: translateX(-50%);
+    }
+
+    .cart-btn{
+        left: 0;
     }
 }
 
