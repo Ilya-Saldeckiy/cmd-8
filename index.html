@@ -39,7 +39,7 @@
                     </div>
                     <div class="btn-position-header">
                         <span class="cart-number">0</span>
-                        <button class="btn cart-btn" type="button"></button>
+                        <button class="btn cart-btn" id="cart-btn" type="button"></button>
                     </div>
                 </div>
             </div>
@@ -54,10 +54,10 @@
                 </p>
             </div>
         </header>
-        <div class="fancybox-stage popup-fade popup-fade-1">
-            <div class="fancybox-slide fancybox-slide--html">
-                    <div class="popup popup-1 popup-list">
-                        <button class="btn popup-close second-modal-close"></button>
+            <div class="modal" id="modal">
+                <div class="modal__content">
+                    <button class="btn popup-close second-modal-close"></button>
+                  <!-- Контент модального окна -->
                         <div class="modal__caption-position">
                             <h4 class="modal__caption list-caption">Список анализов</h4>
                         </div>
@@ -121,8 +121,7 @@
                                 <button class="btn download-btn"><span class="modal__download-btn-text">Сохранить PDF</span></button>
                             </div>
                         </div>
-                    </div>		
-            </div>
+                </div>
             </div>
     </section>
         <main>
@@ -209,7 +208,7 @@
                     <div class="researches__table first-table">
                         <h3 class="researches-table__caption">Общеклиническое исследование крови</h3>
                         <div class="researches-table__item">
-                            <a class="researches-table__link popup-open-2">Общий анализ крови +&nbsp;СОЭ с&nbsp;лейкоцитарной формулой</a>
+                            <a class="researches-table__link" id="modal-open-1">Общий анализ крови +&nbsp;СОЭ с&nbsp;лейкоцитарной формулой</a>
                             <div class="researches__upper-line">
                                 <p class="researches__upper-code">Код:<span class="code">110006</span></p>
                                 <p class="researches__upper-deadline">Срок:<span class="code">2&nbsp;к.д.</span></p>
@@ -219,7 +218,7 @@
                             <button class="btn researches__btn"></button>
                         </div>
                         <div class="researches-table__item">
-                            <a class="researches-table__link popup-open-3">Ретикулоциты</a>
+                            <a class="researches-table__link" id="modal-open-2">Ретикулоциты</a>
                             <div class="researches__upper-line">
                                 <p class="researches__upper-code">Код:<span class="code">110007</span></p>
                                 <p class="researches__upper-deadline">Срок:<span class="code">2&nbsp;к.д.</span></p>
@@ -229,7 +228,7 @@
                             <button class="btn researches__btn"></button>
                         </div>
                         <div class="researches-table__item">
-                            <a class="researches-table__link popup-open-4">Общий анализ крови +&nbsp;СОЭ (без&nbsp;лейкоцитарной формулы)</a>
+                            <a class="researches-table__link" id="modal-open-3">Общий анализ крови +&nbsp;СОЭ (без&nbsp;лейкоцитарной формулы)</a>
                             <div class="researches__upper-line">
                                 <p class="researches__upper-code">Код:<span class="code">110008</span></p>
                                 <p class="researches__upper-deadline">Срок:<span class="code">2&nbsp;к.д.</span></p>
@@ -239,7 +238,7 @@
                             <button class="btn researches__btn"></button>
                         </div>
                         <div class="researches-table__item last-item">
-                            <a class="researches-table__link popup-open-5">СОЭ</a>
+                            <a class="researches-table__link" id="modal-open-4">СОЭ</a>
                             <div class="researches__upper-line">
                                 <p class="researches__upper-code">Код:<span class="code">110012</span></p>
                                 <p class="researches__upper-deadline">Срок:<span class="code">2 к.д.</span></p>
@@ -248,165 +247,170 @@
                             </div>
                             <button class="btn researches__btn"></button>
                         </div>
-                        <div class="popup-fade popup-fade-2">
-                            <div class="popup second-modal popup-2">
-                                <button class="btn popup-close"></button>
-                                <div class="modal__caption-position">
-                                    <h4 class="modal__list-analiz-caption">Общий анализ крови +&nbsp;СОЭ с&nbsp;лейкоцитарной формулой (с&nbsp;микроскопией мазка крови при наличии патологических сдвигов), венозная кровь</h4>
-                                    <div class="btn__second-modal-position horizontal-scroll-wrapper horizontal-scroll-wrapper">
-                                        <button class="btn btn__second-modal btn__is-active" data-path="preparation">Подготовка</button>
-                                        <button class="btn btn__second-modal" data-path="deckription">Описание</button>
-                                        <button class="btn btn__second-modal" data-path="inter">Интерпретация</button>
-                                    </div>
-                                    <div class="text-btn first-btn active-btn-modal modal-model" data-target="preparation">
-                                        <h3>Биоматериал</h3>
-                                        <p class="modal__list-analiz-text">Для данного исследования лаборатория принимает следующий биоматериал:</p>
-                                        <ul class="modal__list-2">
-                                            <li>Кровь с&nbsp;ЭДТА</li>
-                                        </ul>
-                                        <p class="modal__list-text">Возможны ограничения в&nbsp;приеме биоматериала. Уточняйте информацию в&nbsp;расписании нужного Вам офиса.</p>
-                                        <h4 class="modal__list-preparation-caption">Подготовка к&nbsp;исследованию</h4>
-                                        <p class="modal__list-preparation-text">Взятие крови проводится не&nbsp;ранее, чем через 2-3&nbsp;часа после последнего приема пищи. Можно пить воду без газа.</p>
-                                    </div>
-                                    <div class="text-btn second-btn" data-target="deckription">
-                                        <div class="detail__content modal-model" itemprop="description">
-                                            <h3>Метод исследования</h3>
-                                            <ul class="modal__list-2">
-                                                <li>Лазеро-оптический</li>
-                                            </ul>
-                                            <p>
-                                            Клинический анализ крови (Complete Blood Count, анализ крови общий) является неотъемлемой частью в диагностике патологических процессов и отражает состояние кроветворных органов при воздействии различных факторов. Клинический анализ крови используется в диагностике самых разных заболеваний, а при заболеваниях системы кроветворения ему отводится ведущая роль.
-                                            </p>
-                                            <p>
-                                            Определение СОЭ является неспецифичным показателем воспаления, на результаты оказывают влияние слишком многие факторы. Кроме того, СОЭ начинает повышаться только через 24-48 часа и достигать максимума ко 2-й недели от начала заболевания, а нередко только к периоду выздоровления, также возможны колебания значений в течение дня. Поэтому клиническое значение СОЭ утратило свою значимость в качестве первичного скринингового исследования.
-                                            </p>
-                                            <h2>Показания к исследованию:</h2>
-                                            <ul>
-                                                <li>скрининговое обследование при профилактическом осмотре, диспансеризации;</li>
-                                                <li>первичное обследование при госпитализации;</li>
-                                                <li>диагностика анемий;</li>
-                                                <li>диагностика болезней системы кроветворения;</li>
-                                                <li>инфекционно-воспалительные заболевания;</li>
-                                                <li>контроль эффективности терапии и течения различных заболеваний.</li>
-                                            </ul>
-                                            </div>
-                                    </div>
-                                    <div class="text-btn three-btn" data-target="inter">
-                                        <div class="detail__content modal-model">
-                                        <p>
-                                            В общем анализе крови с лейкоцитарной формулой без СОЭ определяются следующие параметры:
-                                        </p>
-                                        <div class="table-responsive">
-                                            <table class="highlighted">
-                                            <tbody>
-                                            <tr>
-                                                <td>
-                                        <a title="лейкоциты" href="/analizy-i-tseny/katalog-analizov/leykotsity-wbc-white-blood-cells/" target="_blank">Общее количество лейкоцитов (WBC)</a>
-                                                </td>
-                                                <td>
-                                        <a title="лейкоцитарная формула" href="/analizy-i-tseny/katalog-analizov/leykotsitarnaya-formula/" target="_blank">Лейкоцитарная формула</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                        <a title="эритроциты" href="/analizy-i-tseny/katalog-analizov/eritrotsity-krasnye-krovyanye-kletki-red-blood-cells-rbc/" target="_blank">Общее количество эритроцитов (RBC)</a>
-                                                </td>
-                                                <td>
-                                        <a title="Лимфоциты" href="/analizy-i-tseny/katalog-analizov/limfotsity/" target="_blank">Лимфоциты</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                        <a href="/analizy-i-tseny/katalog-analizov/gemoglobin/" target="_blank">Гемоглобин (Hb)</a>
-                                                </td>
-                                                <td>
-                                        <a title="Сегментоядерные нейтрофилы" href="/analizy-i-tseny/katalog-analizov/neytrofily/" target="_blank">Сегментоядерные нейтрофилы</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                        <a title="гематокрит" href="/analizy-i-tseny/katalog-analizov/gematokrit/" target="_blank">Гематокрит (HCT)</a>
-                                                </td>
-                                                <td>
-                                        <a title="Палочкоядерные нейтрофилы" href="/analizy-i-tseny/katalog-analizov/neytrofily/" target="_blank">Палочкоядерные нейтрофилы</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                        <a title="Среднее содержание гемоглобина в эритроците" href="/analizy-i-tseny/katalog-analizov/srednee-soderzhanie-gemoglobina-v-eritrotsite-mch-mean-corpuscular-hemoglobin/" target="_blank">Среднее содержание гемоглобина в эритроците (МСН)</a>
-                                                </td>
-                                                <td>
-                                                    Бластные клетки<sup>1</sup>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                        <a title="Средняя концентрация гемоглобина в эритроците" href="/analizy-i-tseny/katalog-analizov/srednaja-koncentracija-gemoglobina-v-eritrocitah/" target="_blank">Средняя концентрация гемоглобина в эритроците (МСНС)</a>
-                                                </td>
-                                                <td>
-                                                    Промиелоциты<sup>1</sup>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                        <a title="Ширина распределения эритроцитов по объему" href="/analizy-i-tseny/katalog-analizov/raspredelenie-eritrotsitov-po-obemu/" target="_blank">Ширина распределения эритроцитов по объему (RDW-CV)</a>
-                                                </td>
-                                                <td>
-                                                    Миелоциты<sup>1</sup>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                        <a title="эритроцитарные индексы" href="/analizy-i-tseny/katalog-analizov/sredniy-obem-eritrotsita/" target="_blank">Средний объем эритроцита (MCV)</a>
-                                                </td>
-                                                <td>
-                                                    Метамиелоциты<sup>1</sup>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                        <a title="тромбоциты" href="/analizy-i-tseny/katalog-analizov/trombotsity/" target="_blank">Тромбоциты (PLT)</a>
-                                                </td>
-                                                <td>
-                                        <a title="Моноциты" href="/analizy-i-tseny/katalog-analizov/monotsity/" target="_blank">Моноциты</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <br>
-                                                </td>
-                                                <td>
-                                        <a title="Базофилы" href="/analizy-i-tseny/katalog-analizov/bazofily-baso-basophils/" target="_blank">Базофилы</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                </td>
-                                                <td>
-                                        <a title="Эозинофилы" href="/analizy-i-tseny/katalog-analizov/eozinofily/" target="_blank">Эозинофилы</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                </td>
-                                                <td>
-                                                    Плазматические клетки<sup>1</sup>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                            </table>
-                                        </div>
-                                    <p><sup>1</sup>Внимание! Параметры «Плазматические клетки», «Бластные клетки», «Промиелоциты», «Миелоциты», «Метамиелоциты» отображаются на бланке результата исследования ТОЛЬКО в том случае, если соответствующие клетки были обнаружены в образце крови пациента.</p>
-                                    <div class="alert alert--danger">
-                                        Обращаем Ваше внимание на то, что интерпретация результатов исследований, установление диагноза, а также назначение лечения, в соответствии с Федеральным законом № 323-ФЗ «Об основах охраны здоровья граждан в Российской Федерации» от 21 ноября 2011 года, должны производиться врачом соответствующей специализации.
-                                    </div></div>
-                                    </div>
-                                </div>
+                        <div class="modal" id="modal-1">
+                            <div class="modal__content">
+                                <button class="btn popup-close second-modal-close"></button>
+                              <!-- Контент модального окна -->
+                              <button class="btn popup-close"></button>
+                              <div class="modal__caption-position">
+                                  <h4 class="modal__list-analiz-caption">Общий анализ крови +&nbsp;СОЭ с&nbsp;лейкоцитарной формулой (с&nbsp;микроскопией мазка крови при наличии патологических сдвигов), венозная кровь</h4>
+                                  <div class="btn__second-modal-position horizontal-scroll-wrapper horizontal-scroll-wrapper">
+                                      <button class="btn btn__second-modal btn__is-active" data-path="preparation">Подготовка</button>
+                                      <button class="btn btn__second-modal" data-path="deckription">Описание</button>
+                                      <button class="btn btn__second-modal" data-path="inter">Интерпретация</button>
+                                  </div>
+                                  <div class="text-btn first-btn active-btn-modal modal-model" data-target="preparation">
+                                      <h3>Биоматериал</h3>
+                                      <p class="modal__list-analiz-text">Для данного исследования лаборатория принимает следующий биоматериал:</p>
+                                      <ul class="modal__list-2">
+                                          <li>Кровь с&nbsp;ЭДТА</li>
+                                      </ul>
+                                      <p class="modal__list-text">Возможны ограничения в&nbsp;приеме биоматериала. Уточняйте информацию в&nbsp;расписании нужного Вам офиса.</p>
+                                      <h4 class="modal__list-preparation-caption">Подготовка к&nbsp;исследованию</h4>
+                                      <p class="modal__list-preparation-text">Взятие крови проводится не&nbsp;ранее, чем через 2-3&nbsp;часа после последнего приема пищи. Можно пить воду без газа.</p>
+                                  </div>
+                                  <div class="text-btn second-btn" data-target="deckription">
+                                      <div class="detail__content modal-model" itemprop="description">
+                                          <h3>Метод исследования</h3>
+                                          <ul class="modal__list-2">
+                                              <li>Лазеро-оптический</li>
+                                          </ul>
+                                          <p>
+                                          Клинический анализ крови (Complete Blood Count, анализ крови общий) является неотъемлемой частью в диагностике патологических процессов и отражает состояние кроветворных органов при воздействии различных факторов. Клинический анализ крови используется в диагностике самых разных заболеваний, а при заболеваниях системы кроветворения ему отводится ведущая роль.
+                                          </p>
+                                          <p>
+                                          Определение СОЭ является неспецифичным показателем воспаления, на результаты оказывают влияние слишком многие факторы. Кроме того, СОЭ начинает повышаться только через 24-48 часа и достигать максимума ко 2-й недели от начала заболевания, а нередко только к периоду выздоровления, также возможны колебания значений в течение дня. Поэтому клиническое значение СОЭ утратило свою значимость в качестве первичного скринингового исследования.
+                                          </p>
+                                          <h2>Показания к исследованию:</h2>
+                                          <ul>
+                                              <li>скрининговое обследование при профилактическом осмотре, диспансеризации;</li>
+                                              <li>первичное обследование при госпитализации;</li>
+                                              <li>диагностика анемий;</li>
+                                              <li>диагностика болезней системы кроветворения;</li>
+                                              <li>инфекционно-воспалительные заболевания;</li>
+                                              <li>контроль эффективности терапии и течения различных заболеваний.</li>
+                                          </ul>
+                                          </div>
+                                  </div>
+                                  <div class="text-btn three-btn" data-target="inter">
+                                      <div class="detail__content modal-model">
+                                      <p>
+                                          В общем анализе крови с лейкоцитарной формулой без СОЭ определяются следующие параметры:
+                                      </p>
+                                      <div class="table-responsive">
+                                          <table class="highlighted">
+                                          <tbody>
+                                          <tr>
+                                              <td>
+                                      <a title="лейкоциты" href="/analizy-i-tseny/katalog-analizov/leykotsity-wbc-white-blood-cells/" target="_blank">Общее количество лейкоцитов (WBC)</a>
+                                              </td>
+                                              <td>
+                                      <a title="лейкоцитарная формула" href="/analizy-i-tseny/katalog-analizov/leykotsitarnaya-formula/" target="_blank">Лейкоцитарная формула</a>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                      <a title="эритроциты" href="/analizy-i-tseny/katalog-analizov/eritrotsity-krasnye-krovyanye-kletki-red-blood-cells-rbc/" target="_blank">Общее количество эритроцитов (RBC)</a>
+                                              </td>
+                                              <td>
+                                      <a title="Лимфоциты" href="/analizy-i-tseny/katalog-analizov/limfotsity/" target="_blank">Лимфоциты</a>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                      <a href="/analizy-i-tseny/katalog-analizov/gemoglobin/" target="_blank">Гемоглобин (Hb)</a>
+                                              </td>
+                                              <td>
+                                      <a title="Сегментоядерные нейтрофилы" href="/analizy-i-tseny/katalog-analizov/neytrofily/" target="_blank">Сегментоядерные нейтрофилы</a>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                      <a title="гематокрит" href="/analizy-i-tseny/katalog-analizov/gematokrit/" target="_blank">Гематокрит (HCT)</a>
+                                              </td>
+                                              <td>
+                                      <a title="Палочкоядерные нейтрофилы" href="/analizy-i-tseny/katalog-analizov/neytrofily/" target="_blank">Палочкоядерные нейтрофилы</a>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                      <a title="Среднее содержание гемоглобина в эритроците" href="/analizy-i-tseny/katalog-analizov/srednee-soderzhanie-gemoglobina-v-eritrotsite-mch-mean-corpuscular-hemoglobin/" target="_blank">Среднее содержание гемоглобина в эритроците (МСН)</a>
+                                              </td>
+                                              <td>
+                                                  Бластные клетки<sup>1</sup>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                      <a title="Средняя концентрация гемоглобина в эритроците" href="/analizy-i-tseny/katalog-analizov/srednaja-koncentracija-gemoglobina-v-eritrocitah/" target="_blank">Средняя концентрация гемоглобина в эритроците (МСНС)</a>
+                                              </td>
+                                              <td>
+                                                  Промиелоциты<sup>1</sup>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                      <a title="Ширина распределения эритроцитов по объему" href="/analizy-i-tseny/katalog-analizov/raspredelenie-eritrotsitov-po-obemu/" target="_blank">Ширина распределения эритроцитов по объему (RDW-CV)</a>
+                                              </td>
+                                              <td>
+                                                  Миелоциты<sup>1</sup>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                      <a title="эритроцитарные индексы" href="/analizy-i-tseny/katalog-analizov/sredniy-obem-eritrotsita/" target="_blank">Средний объем эритроцита (MCV)</a>
+                                              </td>
+                                              <td>
+                                                  Метамиелоциты<sup>1</sup>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                      <a title="тромбоциты" href="/analizy-i-tseny/katalog-analizov/trombotsity/" target="_blank">Тромбоциты (PLT)</a>
+                                              </td>
+                                              <td>
+                                      <a title="Моноциты" href="/analizy-i-tseny/katalog-analizov/monotsity/" target="_blank">Моноциты</a>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                                  <br>
+                                              </td>
+                                              <td>
+                                      <a title="Базофилы" href="/analizy-i-tseny/katalog-analizov/bazofily-baso-basophils/" target="_blank">Базофилы</a>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                              </td>
+                                              <td>
+                                      <a title="Эозинофилы" href="/analizy-i-tseny/katalog-analizov/eozinofily/" target="_blank">Эозинофилы</a>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                              </td>
+                                              <td>
+                                                  Плазматические клетки<sup>1</sup>
+                                              </td>
+                                          </tr>
+                                          </tbody>
+                                          </table>
+                                      </div>
+                                  <p><sup>1</sup>Внимание! Параметры «Плазматические клетки», «Бластные клетки», «Промиелоциты», «Миелоциты», «Метамиелоциты» отображаются на бланке результата исследования ТОЛЬКО в том случае, если соответствующие клетки были обнаружены в образце крови пациента.</p>
+                                  <div class="alert alert--danger">
+                                      Обращаем Ваше внимание на то, что интерпретация результатов исследований, установление диагноза, а также назначение лечения, в соответствии с Федеральным законом № 323-ФЗ «Об основах охраны здоровья граждан в Российской Федерации» от 21 ноября 2011 года, должны производиться врачом соответствующей специализации.
+                                  </div></div>
+                                  </div>
+                              </div>
+                            </div>
                             </div>
                         </div>
-                        <div class="popup-fade popup-fade-3">
-                            <div class="popup second-modal popup-3">
-                                <button class="btn popup-close"></button>
+                        <div class="modal" id="modal-2">
+                            <div class="modal__content">
+                                <button class="btn popup-close second-modal-close"></button>
+                              <!-- Контент модального окна -->
+                              <button class="btn popup-close"></button>
                                 <div class="modal__caption-position">
                                     <h4 class="modal__list-analiz-caption">Ретикулоциты</h4>
                                     <div class="btn__second-modal-position horizontal-scroll-wrapper horizontal-scroll-wrapper">
@@ -560,9 +564,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="popup-fade popup-fade-4">
-                            <div class="popup second-modal popup-4">
-                                <button class="btn popup-close"></button>
+                        <div class="modal" id="modal-3">
+                            <div class="modal__content">
+                                <button class="btn popup-close second-modal-close"></button>
+                              <!-- Контент модального окна -->
+                              <button class="btn popup-close"></button>
                                 <div class="modal__caption-position">
                                     <h4 class="modal__list-analiz-caption">Общий анализ крови + СОЭ (без лейкоцитарной формулы)</h4>
                                     <div class="btn__second-modal-position horizontal-scroll-wrapper horizontal-scroll-wrapper">
@@ -716,9 +722,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="popup-fade popup-fade-5">
-                            <div class="popup second-modal popup-5">
-                                <button class="btn popup-close"></button>
+                        <div class="modal" id="modal-4">
+                            <div class="modal__content">
+                                <button class="btn popup-close second-modal-close"></button>
+                              <!-- Контент модального окна -->
+                              <button class="btn popup-close"></button>
                                 <div class="modal__caption-position">
                                     <h4 class="modal__list-analiz-caption">СОЭ</h4>
                                     <div class="btn__second-modal-position horizontal-scroll-wrapper horizontal-scroll-wrapper">
@@ -872,9 +880,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="popup-fade popup-fade-6">
-                            <div class="popup second-modal popup-6">
-                                <button class="btn popup-close"></button>
+                        <div class="modal" id="modal-5">
+                            <div class="modal__content">
+                                <button class="btn popup-close second-modal-close"></button>
+                              <!-- Контент модального окна -->
+                              <button class="btn popup-close"></button>
                                 <div class="modal__caption-position">
                                     <h4 class="modal__list-analiz-caption">Общий анализ мочи</h4>
                                     <div class="btn__second-modal-position horizontal-scroll-wrapper horizontal-scroll-wrapper">
@@ -1028,9 +1038,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="popup-fade popup-fade-7">
-                            <div class="popup second-modal popup-7">
-                                <button class="btn popup-close"></button>
+                        <div class="modal" id="modal-6">
+                            <div class="modal__content">
+                                <button class="btn popup-close second-modal-close"></button>
+                              <!-- Контент модального окна -->
+                              <button class="btn popup-close"></button>
                                 <div class="modal__caption-position">
                                     <h4 class="modal__list-analiz-caption">2-х стаканная проба</h4>
                                     <div class="btn__second-modal-position horizontal-scroll-wrapper horizontal-scroll-wrapper">
@@ -1184,9 +1196,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="popup-fade popup-fade-8">
-                            <div class="popup second-modal popup-8">
-                                <button class="btn popup-close"></button>
+                        <div class="modal" id="modal-7">
+                            <div class="modal__content">
+                                <button class="btn popup-close second-modal-close"></button>
+                              <!-- Контент модального окна -->
+                              <button class="btn popup-close"></button>
                                 <div class="modal__caption-position">
                                     <h4 class="modal__list-analiz-caption">3-х стаканная проба</h4>
                                     <div class="btn__second-modal-position horizontal-scroll-wrapper horizontal-scroll-wrapper">
@@ -1340,9 +1354,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="popup-fade popup-fade-9">
-                            <div class="popup second-modal popup-9">
-                                <button class="btn popup-close"></button>
+                        <div class="modal" id="modal-8">
+                            <div class="modal__content">
+                                <button class="btn popup-close second-modal-close"></button>
+                              <!-- Контент модального окна -->
+                              <button class="btn popup-close"></button>
                                 <div class="modal__caption-position">
                                     <h4 class="modal__list-analiz-caption">Анализ мочи по Зимницкому</h4>
                                     <div class="btn__second-modal-position horizontal-scroll-wrapper horizontal-scroll-wrapper">
@@ -1497,10 +1513,11 @@
                             </div>
                         </div>
                     </div>
+                    <div class="container">
                     <div class="researches__table last-table">
                         <h3 class="researches-table__caption">Общеклиническое исследование мочи</h3>
                         <div class="researches-table__item">
-                            <a class="researches-table__link popup-open-6">Общий анализ мочи</a>
+                            <a class="researches-table__link" id="modal-open-5">Общий анализ мочи</a>
                             <div class="researches__upper-line">
                                 <p class="researches__upper-code">Код:<span class="code">110101</span></p>
                                 <p class="researches__upper-deadline">Срок:<span class="code">2&nbsp;к.д.</span></p>
@@ -1510,7 +1527,7 @@
                             <button class="btn researches__btn"></button>
                         </div>
                         <div class="researches-table__item">
-                            <a class="researches-table__link popup-open-7">2-х&nbsp;стаканная проба</a>
+                            <a class="researches-table__link" id="modal-open-6">2-х&nbsp;стаканная проба</a>
                             <div class="researches__upper-line">
                                 <p class="researches__upper-code">Код:<span class="code">110102</span></p>
                                 <p class="researches__upper-deadline">Срок:<span class="code">2&nbsp;к.д.</span></p>
@@ -1520,7 +1537,7 @@
                             <button class="btn researches__btn"></button>
                         </div>
                         <div class="researches-table__item">
-                            <a class="researches-table__link popup-open-8">3-х&nbsp;стаканная проба</a>
+                            <a class="researches-table__link" id="modal-open-7">3-х&nbsp;стаканная проба</a>
                             <div class="researches__upper-line">
                                 <p class="researches__upper-code">Код:<span class="code">110103</span></p>
                                 <p class="researches__upper-deadline">Срок:<span class="code">2&nbsp;к.д.</span></p>
@@ -1530,7 +1547,7 @@
                             <button class="btn researches__btn"></button>
                         </div>
                         <div class="researches-table__item last-item">
-                            <a class="researches-table__link popup-open-9">Анализ мочи по&nbsp;Зимницкому</a>
+                            <a class="researches-table__link" id="modal-open-8">Анализ мочи по&nbsp;Зимницкому</a>
                             <div class="researches__upper-line">
                                 <p class="researches__upper-code">Код:<span class="code">110105</span></p>
                                 <p class="researches__upper-deadline">Срок:<span class="code">2&nbsp;к.д.</span></p>
