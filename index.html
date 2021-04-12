@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet" href="css/simplebar.css">
+    <link rel="stylesheet" href="css/selectric.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/modal.css">
@@ -18,6 +19,7 @@
     <link rel="preload" href="font/manrope-bold.ttf" as="font">
     <script src="js/jquery.js"></script>
     <script src="js/iquery-ui.js"></script>
+    <script src="js/jquery.selectric.min.js"></script>
 </head>
 <body>
     <section class="header-section">
@@ -48,7 +50,7 @@
             <div class="header-caption-position">
                 <h2 class="header-caption">Скидки до&nbsp;50%</h2>
                 <h4 class="header-subtitle">на&nbsp;медицинские анализы</h4>
-                <a href="#analiz" class="btn header__btn" type="button"><span>Выбрать анализы<span></a>
+                <button href="#analiz" class="btn header__btn" type="button">Выбрать анализы</button>
                 <p class="header__text">
                     <span class="header-text__decoration">Акция действует в&nbsp;офисе&nbsp;CMD:</span> д.&nbsp;Мисайлово,&nbsp;ЖК «Пригород Лесное», Литературный бульвар, д.&nbsp;2
                 </p>
@@ -79,7 +81,7 @@
                                 <p class="researches__upper-sale">-30%</p>
                                 <p class="researches__upper-price">231&nbsp;р.</p>
                             </div>
-                            <button class="btn researches__btn modal-researches__btn"></button>
+                            <button class="btn researches__btn modal-researches__btn second-list-btn"></button>
                         </div>
                         <div id="three-item" class="researches-table__item last-modal__item item-3">
                             <a class="researches-table__link" href="#" target="_blank">Общий анализ крови +&nbsp;СОЭ (без&nbsp;лейкоцитарной формулы)</a>
@@ -174,7 +176,7 @@
                     <p class="analyzes__text">С&nbsp;1&nbsp;по&nbsp;30&nbsp;апреля 2021&nbsp;г. в&nbsp;офисе&nbsp;CMD Мисайлово действует скидка до&nbsp;50% на&nbsp;медицинские анализы. <a class="analyzes-text__link" target="_blank" href="#">Полные условия акции</a></p>
                     <div class="analyzes__search-block">
                         <div class="select__posotion">
-                            <select name="select" id="selectCustom">
+                            <select id="select" data-simplebar>
                                 <div class="">
                                 <option value="">Общеклинические исследования</option>
                                 <option value="">Биохимические исследования крови</option>

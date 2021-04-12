@@ -257,3 +257,16 @@ $(".header__btn").on("click", function(e){
         scrollTop: $(anchor).offset().top - 50
     }, 800);
 });
+
+
+$(function() {
+	$('select').selectric({
+		disableOnMobile: false,
+		nativeOnMobile: false
+	});
+  });
+
+  $('.header__btn').on('click', function() {
+    var elem = $('#analiz');
+    scrollToElement(elem);
+  })

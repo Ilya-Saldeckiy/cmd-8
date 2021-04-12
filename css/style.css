@@ -258,12 +258,6 @@ li{
     text-align: center;
 }
 
-.header__btn span{
-    position: relative;
-    top: 10px;
-    vertical-align: -webkit-baseline-middle;
-}
-
 .header__text{
     font-size: 18px;
     line-height: 28px;
@@ -1708,6 +1702,147 @@ ul .conditions__text{
 }
 
 
+.select,.select__posotion {
+    min-width: 0;
+    width: 100%;
+    max-width: 508px;
+}
+
+.form-file__label, .form-input,.selectric {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #bbb;
+    border-radius: 0;
+    height: 48px;
+    padding-left: 15px;
+    padding-right: 7px;
+}
+
+.selectric {
+    border: 1px solid #ddd;
+    border-radius: 0;
+    background: #f8f8f8;
+    position: relative;
+    overflow: hidden;
+}
+
+.selectric {
+    padding-right: 40px;
+    line-height: 48px;
+    background-color: #fff;
+}
+
+.selectric .label {
+    height: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    color: inherit;
+    margin: 0;
+}
+
+.selectric-open {
+    z-index: 1;
+}
+
+.selectric .button {
+    font-size: 0;
+    background-color: transparent;
+    width: 34px;
+}
+
+.selectric .button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 38px;
+    background-color: #fff;
+    color: #bbb;
+    text-align: center;
+    height: 100%;
+}
+
+.selectric-items {
+    background-color: #fff !important;
+    padding: 24px;
+}
+
+.selectric .button:after{
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: url('../img/arrow_down_select.svg') 50% no-repeat;
+}
+
+.selectric-items li,.selectric-items li.highlighted{
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.selectric .label{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.selectric{
+    padding-left: 16px;
+}
+
+.selectric-open .selectric {
+    outline: 0;
+    border-color: #00a9e0;
+}
+
+.selectric-items li{
+    padding: 8px;
+}
+
+.selectric-items{
+    border-top: none;
+    padding-top: 27px;
+    padding-left: 24px;
+    padding-bottom: 19px;
+    padding-right: 24px;
+}
+
+.selectric-items:focus{
+    outline: none;
+}
+
+.selectric-scroll::-webkit-scrollbar {
+    width: 3px;
+}
+
+.selectric-scroll::-webkit-scrollbar-track {
+    border-radius: 100%;
+    width: 1px;
+    background-color: #ddd;
+}
+
+.selectric-scroll::-webkit-scrollbar-thumb{
+    background: #999;
+    width: 3px;
+    position: absolute;
+}
+
+.selectric-items li:hover{
+    background-color: #fff;
+    color: #00a9e0;
+}
+
+.selectric-items .selectric-scroll {
+    height: 100%;
+    overflow: auto;
+    padding-right: 64px;
+}
+
+
+
 
 
 
@@ -2332,6 +2467,14 @@ ul .conditions__text{
         top: 57%;
     }
 
+    
+    .select, .select__posotion {
+        min-width: 0;
+        width: 100%;
+        max-width: 368px;
+    }
+
+
 }
 
 @media (max-width: 767px){
@@ -2339,6 +2482,12 @@ ul .conditions__text{
         padding-left: 16px;
         padding-right: 16px;
         width: 100%;
+    }
+
+    .select, .select__posotion {
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
     }
 
     .section-adress{
@@ -3272,10 +3421,6 @@ ul .conditions__text{
     .popup-close {
         top: -5px !important;
         right: 0px !important;
-    }
-
-    .header__btn span{
-        top: 1px;
     }
 
     .choices__inner{

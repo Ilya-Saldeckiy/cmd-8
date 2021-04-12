@@ -6,7 +6,4 @@ const element = document.querySelector('#selectCustom');
 
 new SimpleBar(document.querySelector('.choices__list--dropdown'));
 
-Array.prototype.forEach.call(
-    document.querySelectorAll('.choices__list'),
-    el => new SimpleBar()
-)
+new SimpleBar(document.getElementById('select'));

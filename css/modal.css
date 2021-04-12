@@ -27,80 +27,10 @@
     background-color: #fff;
     position: relative;
     padding: 36px 40px 40px;
-    max-width: 1057px;
-    width: 100%;
-}
-
-
-
-
-
-
-
-
-.popup-fade {
-	display: none;
-    opacity: 1;
-    overflow-x:auto;
-}
-.popup-fade:before {
-	content: '';
-	background: #000;
-	position: fixed; 
-	left: 0;
-	top: 0;
-	width: 100%; 
-	height: 100vh;
-	opacity: 0.7;
-	z-index: 9999;
-}
-.popup {
-	/* position: absolute;
-	top: 40px;
-	left: 0;
-    right: 0;	
-	background: #fff;
-	z-index: 99999;
-	opacity: 1;
-    width: 100%;
-    max-width: 800px;
-    padding: 36px 40px 40px;
-    overflow: visible;
-    margin: 0 auto;;
-    overflow-y: auto;
-    padding-bottom: 70px;
-    padding: 36px 40px 40px; */
-    /* -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    display: none;
     max-width: 1233px;
     width: 100%;
-    padding: 36px 40px 40px;
-    overflow: visible;
-    background: #fff;
-    display: inline-block;
-    margin: 0;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    padding: 44px;
-    position: relative;
-    text-align: left;
-    vertical-align: middle;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0; */
-
-    width:50%;
-  height:1000px;
-  background:white;
-  position:static;
-  display:inline-block;
-  margin-top:5%;
-  margin-bottom:5%;
-  border-radius:5px;
 }
+
 
 .popup-list{
     padding-top: 39px;
@@ -251,8 +181,9 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    top: 8px;
+    top: 7px;
 }
+
 
 .last-modal__item{
     margin-bottom: 49px;
@@ -330,8 +261,14 @@
     font-size: 16px;
     line-height: 1.2;
     font-weight: 400;
-    color: #999999;
+    color: #000;
     margin-right: 32px;
+    padding-left: 16px;
+    outline: none;
+}
+
+.modal-form__input:focus{
+    outline: none;
 }
 
 .modal-form__input::placeholder{
@@ -417,10 +354,6 @@
     font-weight: 700;
     color: #000000;
     padding-right: 90px;
-}
-
-.second-modal{
-    padding-right: 100px;
 }
 
 .btn__second-modal-position{
@@ -656,8 +589,9 @@ table {
 
 
 @media (max-width: 1023px){
-    .popup{
+    .modal{
         max-width: 100%;
+        padding: 0;
     }
     .fancybox-slide{
         padding: 0;
@@ -666,7 +600,11 @@ table {
     .modal-researches__btn{
         position: absolute;
         right: 5px;
-        top: 100px;
+        top: 104px;
+    }
+
+    .second-list-btn{
+        top:78px;
     }
 
     .modal__description {
@@ -717,8 +655,16 @@ table {
         min-height: 0;
     }
 
-    .popup{
-        padding: 13px 0px 32px;
+    .modal-researches__btn{
+        top: 126px;
+    }
+
+    .second-list-btn {
+        top: 104px;
+    }
+
+    .modal{
+        padding: 0;
     }
 
     .second-modal {
@@ -847,7 +793,7 @@ table {
         top: 71%;
     }
 
-    .popup{
+    .modal{
         max-height: 100%;
     }
 }
