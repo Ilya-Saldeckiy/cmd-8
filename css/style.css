@@ -220,7 +220,7 @@ li{
     display: flex;
     align-items: center;
     font-size: 15px;
-    padding-top: 10px;
+    padding-top: 3px;
 }
 
 .menu-list-item:not(:last-child){
