@@ -2129,7 +2129,7 @@ ul .conditions__text{
     }
 
     .header-section{
-        padding-bottom: 140px;
+        padding-bottom: 83px;
         background-size: auto;
         background-color: #9d96d5;
     }
@@ -2238,7 +2238,7 @@ ul .conditions__text{
         font-weight: 700;
         color: #ffffff;
         padding-top: 253px;
-        margin-bottom: 29px;
+        margin-bottom: 10px;
     }
 
     .header-subtitle{
@@ -2247,7 +2247,7 @@ ul .conditions__text{
         line-height: 54px;
         font-weight: 400;
         color: #ffffff;
-        margin-bottom: 62px;
+        margin-bottom: 58px;
     }
 
     .advantages__card:not(:last-child) {
@@ -2438,7 +2438,7 @@ ul .conditions__text{
     }
 
     .header-caption{
-        padding-top: 139px;
+        padding-top: 86px;
     }
 
     .container,.text-container,.sale-container,.researches-position,.small__container{
@@ -3440,6 +3440,10 @@ ul .conditions__text{
 
     .cart-btn{
         left: 0;
+    }
+
+    .map__info{
+        margin-top: -40px;
     }
 }
 
