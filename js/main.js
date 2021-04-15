@@ -118,7 +118,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phon
 		$('.modal').removeClass('modal_active');
 		$('body').removeClass('hidden');
 	});
-} else
+}
 
 $(function () {
 	$('#cart-btn').click(function () {
