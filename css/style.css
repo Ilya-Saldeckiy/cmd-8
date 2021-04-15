@@ -56,7 +56,9 @@ li{
     width: 1232px;
     padding: 0;
 }
-
+.selectWrapMobile{
+	display: none;
+}
 .main-caption{
     text-align: center;
     margin-bottom: 62px;
@@ -390,6 +392,21 @@ li{
 
 .remove__preview{
     display: block;
+}
+.select-mobile-wrap__title {
+	font-size: 20px;
+	font-weight: 700;
+}
+.select-mobile-wrap__header {
+	padding-bottom: 18px;
+	margin-bottom: 18px;
+	border-bottom: 1px solid #eee;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 .active__video{
@@ -1413,7 +1430,7 @@ li{
     width: 40px;
     height: 40px;
     border: 1px solid #00a9e0;
-    border-radius: 100%;   
+    border-radius: 100%;
     background: url('../img/ico_list_plus.svg') no-repeat;
     background-position: center;
     position: relative;
@@ -1930,7 +1947,7 @@ ul .conditions__text{
     bottom: 0;
     left: 0;
     right: 0;
-} 
+}
 
 .chesel-row{
     background: rgba(248, 248, 248, 0.96);
@@ -1994,7 +2011,7 @@ ul .conditions__text{
     .fixed-active .nav{
         margin-top: 0;
     }
-    
+
     .menu-list-item:not(:last-child){
         margin-right: 55px;
     }
@@ -2150,7 +2167,7 @@ ul .conditions__text{
     .header-subtitle{
         margin-bottom: 24px;
     }
-    
+
     .menu-list-item{
         display: none;
     }
@@ -2420,7 +2437,7 @@ ul .conditions__text{
         width: 400px;
         margin: 0;
     }
-    
+
     .recomend-text{
         font-size: 14px;
     }
@@ -2467,7 +2484,7 @@ ul .conditions__text{
         top: 57%;
     }
 
-    
+
     .select, .select__posotion {
         min-width: 0;
         width: 100%;
@@ -2476,6 +2493,25 @@ ul .conditions__text{
 
 
 }
+#modal-9{
+	overflow: hidden;
+	height: 100vh;;
+}
+#modal-9 > div{
+height: 100vh;
+}
+#modal-9 ul,li{
+	padding-left: 0;
+		list-style-type:none;
+	font-size: 16px;
+
+}
+.selectPosMobile{
+	display: none;
+}
+.select__posotion{
+	display: block;
+}
 
 @media (max-width: 767px){
     .container,.text-container,.sale-container,.researches-position,.small__container,.conditions__container, .section__conditions{
@@ -2483,6 +2519,43 @@ ul .conditions__text{
         padding-right: 16px;
         width: 100%;
     }
+	.select__posotion{
+		display: none;
+	}
+	.selectPosMobile{
+		margin-top: 16px;
+		display: flex;
+		width: 100%;
+		font-weight: 400;
+		align-items: center;
+		border: 1px solid #f5f5f5;
+		height: 50px;
+		line-height: 32px;
+
+	}
+	select .selectric-items li:not(:last-child) {
+		padding-bottom: 24px;
+	}
+	.office-item__schedule li, .reset-list li, .select .selectric-items ul li {
+		padding: 0;
+		margin: 0;
+		position: static;
+	}
+	.select, .select__posotionMobile {
+		min-width: 0;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.modal__content{
+		padding: 13px 14px 15px!important;
+	}
+	.select-mobile-wrap__header {
+		 margin-left: -16px;
+		 margin-right: -16px;
+		 padding-left: 16px;
+		 padding-right: 16px;
+	}
 
     .select, .select__posotion {
         min-width: 0;
@@ -2497,6 +2570,9 @@ ul .conditions__text{
     .map{
         margin-bottom: 98px;
     }
+		.selectWrapMobile{
+			display: flex;
+		}
 
     img{
         max-width: 144px;
@@ -2637,7 +2713,7 @@ ul .conditions__text{
     .choices,.form__input{
         width: 100%;
     }
-    
+
     .header-text__decoration{
         font-size: 18px;
         line-height: 32px;
@@ -2659,7 +2735,7 @@ ul .conditions__text{
         margin-right: auto;
         /* margin-bottom: 31px; */
     }
-    
+
     .menu-list-item{
         display: none;
     }
@@ -2755,7 +2831,7 @@ ul .conditions__text{
     .sputnick__step-job:not(:last-child) {
         margin-bottom: 43px;
     }
-    
+
     .sputnick__step-position{
         margin-bottom: 51px;
     }
@@ -3278,7 +3354,7 @@ ul .conditions__text{
         background-size: 15px;
         top: 43px;
     }
-    
+
     .ui-state-active .ui-icon{
         background-size: 15px;
     }
@@ -3413,7 +3489,7 @@ ul .conditions__text{
     .researches__btn {
         top: 60%;
     }
-    
+
     .analyzes__text{
         font-size: 16px;
     }
