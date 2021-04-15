@@ -642,8 +642,13 @@ table {
 
     .download-btn{
         position: absolute;
-        right: 16px;
+        right: 40px;
         width: 230px;
+        bottom: 42px;
+    }
+
+    .forms-modal{
+        margin-bottom: 50px;
     }
 
     .popup{
@@ -660,6 +665,10 @@ table {
         padding-right: 30px;
 
     }
+
+    .form-btn__modal{
+        right: 40px;
+    }
 }
 
 @media (max-width: 767px){
@@ -668,6 +677,25 @@ table {
         -moz-columns: auto;
         columns: auto;
         min-height: 0;
+    }
+
+    .forms-modal{
+        margin-bottom: 30px;
+    }
+
+    #modal-9Mobile li{
+        padding: 8px;
+    }
+
+    #modal-9 ul, li{
+        line-height: 20px;
+    }
+
+    .download-btn{
+        position: absolute;
+        right: 0px;
+        width: 230px;
+        bottom: 0px;
     }
 
     .modal-researches__btn{

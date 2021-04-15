@@ -2624,7 +2624,7 @@ height: 100vh;
         line-height: 28px;
         font-weight: 400;
         margin: 0 auto;
-        margin-bottom: 41px;
+        margin-bottom: 38px;
         width: 250px;
         text-align: center;
     }
@@ -2632,7 +2632,7 @@ height: 100vh;
     .header__btn{
         width: 221px;
         height: 36px;
-        margin-bottom: 35px;
+        margin-bottom: 27px;
     }
 
     .header__text{
@@ -3303,7 +3303,8 @@ height: 100vh;
     }
 
     .header-caption{
-        padding-top: 36px;
+        padding-top: 44px;
+        margin-bottom: 4px;
     }
 
     .footer{
@@ -3485,7 +3486,7 @@ height: 100vh;
     }
 
     .header-section{
-        padding-bottom: 100%;
+        padding-bottom: 98%;
     }
 
     .choices__list--dropdown{
