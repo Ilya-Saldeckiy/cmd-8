@@ -816,6 +816,30 @@ table {
     .modal{
         max-height: 100%;
     }
+
+    .total__text{
+        width: 173px;
+    }
+    
+    .cash__text{
+        width: 173px;
+        text-align: right;
+    }
+
+    .researches__description-list li{
+        list-style-type: disc;
+    }
+
+    .modal__description{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .modal__description .researches__description-text{
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
 }
 
 
